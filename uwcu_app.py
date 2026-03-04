@@ -404,6 +404,7 @@ with tab1:
         )
 
     # ── Cumulative Trend Chart ──
+    st.markdown("")  # breathing room after KPI cards
     st.markdown(
         '<div class="section-header">Cumulative New Members — Daily Trend</div>',
         unsafe_allow_html=True
@@ -630,7 +631,7 @@ with tab1:
             ],
         ))
         fig_bar.update_layout(
-            **CHART_LAYOUT, height=350, barmode="group",
+            **CHART_LAYOUT, height=370, barmode="group",
             legend=dict(
                 orientation="h", yanchor="top", y=-0.12, xanchor="left", x=0,
                 font=dict(size=12, color="#1e293b"),
